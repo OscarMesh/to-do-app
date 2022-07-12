@@ -1,0 +1,68 @@
+:root {
+  --bg-color: #fdfdfd;
+  --form-color: #18dd6a;
+  --blue: #2d176b;
+  --light: #eee;
+  --delete: #ff0000;
+  --edit: rgb(0, 255, 98);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Fira sans", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--blue);
+}
+
+header {
+  padding: 2rem 1rem;
+
+  margin: 0 auto;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: var(--blue);
+  margin-bottom: 1rem;
+}
+
+#new-task {
+  display: flex;
+}
+
+input,
+button {
+  appearance: none;
+  border: none;
+  background: none;
+  outline: none;
+}
+#new-task-input {
+  flex: 1 1 0%;
+  background-color: var(--form-color);
+  border-radius: 1rem;
+  margin-right: 1rem;
+  padding: 1rem;
+  color: var(--light);
+  font-size: 1.25rem;
+}
+
+#new-task-submit {
+  color: var(--form-color);
+  font-size: 1.25rem;
+  font-weight: 700;
+  background-image: linear-gradient(to right, var(--blue), var(--edit));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
